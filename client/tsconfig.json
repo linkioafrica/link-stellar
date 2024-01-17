@@ -1,25 +1,42 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    // JavaScript Support
+    "allowJs": false,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    // Emit
     "noEmit": true,
-    "jsx": "react-jsx",
 
-    /* Linting */
+    // Language and Environment
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "es2015", "ESNext"],
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
+
+    // Interop Constraints
+    "isolatedModules": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+
+    // Type Checking
     "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noImplicitReturns": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+
+    // Completeness
+    "skipLibCheck": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "typings.d.ts", "typings.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules", "typings"]
 }
