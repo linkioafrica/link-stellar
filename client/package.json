@@ -3,10 +3,16 @@
   "private": true,
   "version": "3.1.0",
   "type": "module",
+  "engines": {
+    "node": ">=19.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prettier": "prettier .  --write",
     "preview": "vite preview"
   },
   "repository": {
@@ -21,6 +27,7 @@
     "@reduxjs/toolkit": "^1.8.6",
     "@tabler/icons": "^1.78.0",
     "axios": "^1.5.1",
+    "eslint-config-prettier": "^9.1.0",
     "framer-motion": "^6.5.1",
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.4",
