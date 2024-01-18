@@ -28,6 +28,7 @@
     "@reduxjs/toolkit": "^1.8.6",
     "@tabler/icons": "^1.78.0",
     "axios": "^1.5.1",
+    "dayjs": "^1.11.10",
     "eslint-config-prettier": "^9.1.0",
     "framer-motion": "^6.5.1",
     "jwt-decode": "^3.1.2",
