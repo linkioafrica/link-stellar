@@ -16,6 +16,7 @@
     "isolatedModules": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
 
