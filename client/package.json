@@ -13,7 +13,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext .ts,.tsx",
     "prettier": "prettier .  --write",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
